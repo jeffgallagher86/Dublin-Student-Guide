@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* ----------------------------------------------------Footer */
+
+.footer-socials {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.social-links {
+  color: black;
+  padding: 10px;
+}
+
+.social-links a i {
+  color: rgb(0, 14, 95);
+}
