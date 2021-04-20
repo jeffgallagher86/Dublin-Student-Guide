@@ -14,45 +14,72 @@
 </head>
 
 <body>
-    <!-------------Header & Navbar adapted from Bootstrap docs https://getbootstrap.com/docs/5.0/components/navbar/-------------->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid g-0">
-                <a class="navbar-brand" href="index.html">Dublin Student Guide</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Categories</a>
-                        <a class="nav-link" href="#">Map</a>
-                        <a class="nav-link" href="#">Contact</a>
+        <nav class="navbar">
+            <div class="brand-title"><h2>Dublin Tourist Guide</h2></div>
+            <a href="#" class="toggle-button">
+                    <div class="circle icon">
+                        <span class="line top"></span>
+                        <span class="line middle"></span>
+                        <span class="line bottom"></span>
                     </div>
+            </a>
+                <div class="navbar-links">
+                    <ul id="menu">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Map</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
         </nav>
+
+
+
+        <!-------------Header & Navbar adapted from Bootstrap docs https://getbootstrap.com/docs/5.0/components/navbar/-------------
+    
+
+        <div id="wrapper">
+            <div class="circle icon">
+                <span class="line top"></span>
+                <span class="line middle"></span>
+                <span class="line bottom"></span>
+            </div>
+        </div>
+
+    -->
+
     </header>
-    <section class="container-fluid g-0">
+
+    <section class="container-fluid d-flex justify-content-center g-0">
         <div class="row hero-image g-0">
             <img src="assets/images/dublin_hapenny_bridge.jpg" alt="">
         </div>
     </section>
     <section class="container-fluid d-flex justify-content-center">
-    <div class="row col-10 col-sm-4 col-lg-4 welcome-blurb">
-        <h3 class="justify-content-center">Welcome to Dublin!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet, corporis repellendus sunt nulla reiciendis dolorem cupiditate officia, neque soluta eligendi expedita? Sint maiores quisquam fugit fugiat exercitationem, veniam minima! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt illo nemo, dolorem quidem corporis consequuntur amet asperiores placeat rem, nisi totam. Autem laudantium natus impedit aperiam asperiores obcaecati esse tenetur.</p>
-    </div>
-
-
+        <div class="row col-10 col-sm-4 col-lg-4 welcome-blurb text-center">
+            <h3 class="justify-content-center">Welcome to Dublin!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet, corporis repellendus sunt nulla
+                reiciendis dolorem cupiditate officia, neque soluta eligendi expedita? Sint maiores quisquam fugit
+                fugiat exercitationem, veniam minima! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+                illo nemo, dolorem quidem corporis consequuntur amet asperiores placeat rem, nisi totam. Autem
+                laudantium natus impedit aperiam asperiores obcaecati esse tenetur.</p>
+        </div>
     </section>
     <section>
-
+        Things to do and places thumbnails
     </section>
-
-
+    <section>
+        Map
+    </section>
+    <section>
+        contact form
+    </section>
     <footer>
         <div class="footer-socials">
             <ul class="list-inline">
@@ -82,8 +109,11 @@
                 </li>
             </ul>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

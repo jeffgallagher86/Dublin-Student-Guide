@@ -1,45 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+  color: #777777;
+}
+
+h1,
+h2,
 h3 {
   margin: 0;
-  font-family: Lobster, "sans-serif";
+  font-family: "Lobster", sans-serif;
+  color: #04188a;
 }
 
-/* ----------------------------------------------------Navbar/Header */
 
-.bg-light {
-  background-color: #ffffff!important;
+/* ----------------------------------------------------Header/Nav */
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
 }
 
-.navbar-brand {
-  font-family: Lobster, "sans-serif";
-  font-size: 1.75rem;
-  color: #04188a!important;
-  padding-left: 20px;
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
 }
 
-.navbar-collapse {
-  font-family: Raleway, "sans-serif";
-  justify-content: flex-end;
-  padding-right: 20px;
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
+
+.navbar-links ul {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  padding: 1rem;
+  color: inherit;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color:  #e2e2e2;
+}
+
+/* ----------------------------------------------------Hamburger toggler adapted from tutorial https://www.youtube.com/watch?v=At4B7A4GOPg */
+
+.circle {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  display: none;
+}
+
+.line {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: #04188a;
+  border-radius: 8px;
+  transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.50s;
+}
+
+.top {
+  top: 18%;
+}
+
+.middle {
+  top: 48%;
+}
+
+.bottom {
+  top: 78%;
+}
+
+.icon.close .top {
+  transform: rotate(45deg);
+  top: 48%;
+}
+
+.icon.close .middle,
+.icon.close .bottom {
+  transform: rotate(-45deg);
+  top: 48%;
+}
+
+
+
+
 
 /* ----------------------------------------------------Hero Image */
 
 .hero-image {
-  width: auto;
+  width: 95%;
 }
 
 /* ----------------------------------------------------Welcome Section */
 
 .welcome-blurb {
   font-family: Raleway, "sans-serif";
-  padding-top: 30px;
+  padding-top: 50px;
+}
+
+.welcome-blurb p {
+  padding-top: 20px;
 }
 
 /* ----------------------------------------------------Footer */
@@ -51,10 +131,25 @@ h3 {
 }
 
 .social-links {
-  color: black;
   padding: 10px;
 }
 
 .social-links a i {
-  color: #000e5f;
+  color: #04188a;
 }
+
+
+/* ----------------------------------------------------Media Queries */
+
+@media (max-width: 800px) {
+
+  .circle {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+}
+
