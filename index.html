@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
-
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_Ln3u4ZjFAoNjrswQfCH6M");
+        })();
+    </script>
     <title>Dublin Student Guide</title>
 </head>
 
@@ -52,7 +56,7 @@
         </div>
     </section>
     <section class="container-fluid d-flex justify-content-center">
-        <div class="row col-10 col-sm-4 col-lg-4 welcome-blurb text-center">
+        <div class="row col-lg-4 col-md-8 col-sm-8 col-10 welcome-blurb text-center">
             <h3 class="justify-content-center">Welcome to Dublin!</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet, corporis repellendus sunt nulla
                 reiciendis dolorem cupiditate officia, neque soluta eligendi expedita? Sint maiores quisquam fugit
@@ -190,7 +194,7 @@
                 <h3 class="contact-heading text-center">Give us a shout!</h3>
                 <p class="text-center">If you have any questions at all for us, ask below and we'll get back to you.</p>
             </div>
-            <div class="center-form col-lg-6 col-md-3 col-sm-3 col-10 text-center">
+            <div class="center-form col-lg-6 col-md-8 col-sm-8 col-10 text-center">
                 <form onsubmit="return sendMail(this);">
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
                     <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
@@ -244,5 +248,6 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8ssFH9RcVa-ftK5u_IQnRK_L4ppSASMo&callback=initMap">
     </script>
     <script src="assets/js/maps.js"></script>
+    <script src="assets/js/sendemail.js"></script>
 
 </html>
