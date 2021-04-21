@@ -129,6 +129,14 @@ h4 {
   background-color: #f0f7ffc0;
 }
 
+div#map {
+  min-height: 500px;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  float: center;
+}
+
 /* ----------------------------------------------------Footer */
 
 .footer-socials {
