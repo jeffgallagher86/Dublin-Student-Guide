@@ -131,10 +131,7 @@ h4 {
 
 div#map {
   min-height: 500px;
-  max-width: 1000px;
-  display: flex;
-  justify-content: center;
-  float: center;
+  width: 800px;
 }
 
 /* ----------------------------------------------------Footer */
