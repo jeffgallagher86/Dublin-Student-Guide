@@ -15,7 +15,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   font-family: "Lobster", sans-serif;
   color: #04188a;
@@ -120,6 +121,12 @@ h3 {
 
 .welcome-blurb p {
   padding-top: 20px;
+}
+
+/* ----------------------------------------------------City Features */
+
+.city-features {
+  background-color: #f0f7ffc0;
 }
 
 /* ----------------------------------------------------Footer */
