@@ -10,6 +10,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+
     <title>Dublin Student Guide</title>
 </head>
 
@@ -181,8 +184,23 @@
             </div>
         </div>
     </section>
-    <section>
-        contact form
+    <section class="container-fluid form-section">
+        <div class="row justify-content-center">
+            <div>
+                <h3 class="contact-heading text-center">Give us a shout!</h3>
+                <p class="text-center">If you have any questions at all for us, ask below and we'll get back to you.</p>
+            </div>
+            <div class="center-form col-lg-6 col-md-3 col-sm-3 col-10 text-center">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
+                        required />
+                    <textarea rows="6" name="projectsummary" class="form-control" id="projectsummary"
+                        placeholder="What's the craic?" required></textarea>
+                    <button type="submit" class="btn btn-secondary">Ask Away!</button>
+                </form>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="footer-socials">

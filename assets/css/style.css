@@ -134,6 +134,26 @@ div#map {
   width: 800px;
 }
 
+/* ----------------------------------------------------Contact Form */
+
+.form-section {
+  margin-top: 30px;
+}
+
+.form-section p {
+  margin-top: 8px;
+}
+
+.center-form {
+  margin-top: 8px;
+}
+
+.form-control {
+  margin: 12px 0 12px;
+}
+
+
+
 /* ----------------------------------------------------Footer */
 
 .footer-socials {
