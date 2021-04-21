@@ -141,7 +141,7 @@ h3 {
 
 /* ----------------------------------------------------Media Queries */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 
   .circle {
     display: flex;
@@ -160,6 +160,7 @@ h3 {
     flex-direction: column;
     width: 100%;
     background-color: #04188a;
+    position: fixed;
   }
 
   .navbar-links li {
@@ -172,7 +173,8 @@ h3 {
 
   .navbar-links.active {
     display: block;
-
+    transition: heigth 2s;
   }
+
 
 }
