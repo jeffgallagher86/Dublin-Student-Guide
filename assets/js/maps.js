@@ -1,4 +1,4 @@
-/* --------------------------------------------------------https://www.youtube.com/watch?v=Zxf1mnP5zcw tutorial */
+/* --------------------------------------------------------Map adapted from CI tutorials and https://www.youtube.com/watch?v=Zxf1mnP5zcw tutorial */
 
 function initMap() {
     var options = {
@@ -13,7 +13,8 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), options);
 
     var nomarkers = [];
-
+    
+    // Map markers
     var markers = [{
             coords: {
                 lat: 53.34210922216267,

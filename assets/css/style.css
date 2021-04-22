@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+
 }
 
 body {
@@ -30,13 +31,13 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: black;
 }
 
 .brand-title {
   font-size: 1.5rem;
   margin: 0.5rem;
 }
+
 
 .navbar-links ul {
   margin: 0;
@@ -109,13 +110,31 @@ h4 {
 /* ----------------------------------------------------Hero Image */
 
 .hero-image {
-  width: 95%;
+  position: relative;
+  min-height: calc(100vh - 62px);
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.041)), url("../images/hapenny_bridge.jpg");
+  background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 50px;
+}
+
+.hero-text h1 {
+  color: #ffffff;
+  font-size: 6rem;
 }
 
 /* ----------------------------------------------------Welcome Section */
 
 .welcome-blurb {
-  font-family: Raleway, "sans-serif";
   padding-top: 50px;
 }
 
@@ -123,10 +142,41 @@ h4 {
   padding-top: 20px;
 }
 
+/* ----------------------------------------------------City Features Grid */
+
+.city-features-grid div {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.colleges-background {
+  position: relative;
+  overflow: hidden;
+  min-height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.041)), url("../images/trinity_library.jpg");
+  background-size: cover;
+}
+
+.cheap-eats-background {
+  position: relative;
+  overflow: hidden;
+  min-height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.041)), url("../images/cheap_eats.jpg");
+  background-size: cover;
+}
+
+.city-features-grid h2 {
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+}
+
 /* ----------------------------------------------------City Features */
 
 .city-features {
   background-color: #f0f7ffc0;
+  padding: 30px 0 30px;
 }
 
 div#map {
@@ -135,6 +185,16 @@ div#map {
 
 .map-section {
   margin: 40px 0 40px;
+}
+
+.city-features ul {
+  list-style: none;
+}
+
+.city-features li a {
+  text-decoration: none;
+  color: inherit;
+  display: list-inline;
 }
 
 /* ----------------------------------------------------Contact Form */
@@ -195,7 +255,9 @@ div#map {
     flex-direction: column;
     width: 100%;
     background-color: #04188a;
-    position: fixed;
+    position: absolute;
+    z-index: 100;
+    transition: 2s ease-in;
   }
 
   .navbar-links li {
@@ -208,7 +270,6 @@ div#map {
 
   .navbar-links.active {
     display: block;
-    transition: heigth 2s;
   }
 
 
