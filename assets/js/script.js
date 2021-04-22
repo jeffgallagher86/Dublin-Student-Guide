@@ -2,6 +2,7 @@
 
 $(".toggle-button").click(function () {
   $(".icon").toggleClass("close");
+
 });
 
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
