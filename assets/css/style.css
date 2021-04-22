@@ -130,8 +130,11 @@ h4 {
 }
 
 div#map {
-  min-height: 500px;
-  width: 800px;
+  height: 500px;
+}
+
+.map-section {
+  margin: 40px 0 40px;
 }
 
 /* ----------------------------------------------------Contact Form */
