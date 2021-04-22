@@ -146,8 +146,15 @@ h4 {
 
 .city-features-grid div {
   margin-top: 20px;
+  padding: 20px;
   display: flex;
   gap: 10px;
+}
+
+.box{
+  box-sizing: border-box;
+  border: 10px solid transparent;
+  background-clip:padding-box;
 }
 
 .colleges-background {
