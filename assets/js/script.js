@@ -2,6 +2,7 @@
 
 $(".toggle-button").click(function () {
   $(".icon").toggleClass("close");
+  $(".navbar-links").fadeToggle();
 
 });
 
@@ -16,13 +17,10 @@ toggleButton.addEventListener('click', () => {
 
 /* --------------------------------------------------------Scroll to top button */
 
-const btnScrollToTop = document.querySelector("#btnScrollToTop");
 
-btnScrollToTop.addEventListener("click", function () {
-
+$("#btnScrollToTop").click(function(){
   $("html, body").animate({ scrollTop: "0" }, "slow");
-
-});  
+});
 
 
 
