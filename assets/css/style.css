@@ -57,9 +57,8 @@ h4 {
 }
 
 .navbar-links li:hover {
-  background-color: #e2e2e2;
+  text-decoration: underline;
 }
-
 /* ----------------------------------------------------Hamburger toggler adapted from tutorial https://www.youtube.com/watch?v=At4B7A4GOPg */
 
 .circle {
@@ -142,43 +141,6 @@ h4 {
   padding-top: 20px;
 }
 
-/* ----------------------------------------------------City Features Grid */
-
-.city-features-grid div {
-  margin-top: 20px;
-  padding: 20px;
-  display: flex;
-  gap: 10px;
-}
-
-.box{
-  box-sizing: border-box;
-  border: 10px solid transparent;
-  background-clip:padding-box;
-}
-
-.colleges-background {
-  position: relative;
-  overflow: hidden;
-  min-height: 40vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.041)), url("../images/trinity_library.jpg");
-  background-size: cover;
-}
-
-.cheap-eats-background {
-  position: relative;
-  overflow: hidden;
-  min-height: 40vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.041)), url("../images/cheap_eats.jpg");
-  background-size: cover;
-}
-
-.city-features-grid h2 {
-  top: 50%;
-  left: 50%;
-  color: #ffffff;
-}
-
 /* ----------------------------------------------------City Features */
 
 .city-features {
@@ -186,22 +148,37 @@ h4 {
   padding: 30px 0 30px;
 }
 
+.city-features ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.city-features li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.city-features p {
+ text-decoration: underline;
+ font-weight: bold;
+ padding-top: 0.5rem;
+ color: #04188a;
+ font-size: 1.2rem;
+ margin-bottom: 0.1rem;
+}
+
+.city-features li a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------------------City Features */
+
 div#map {
   height: 500px;
 }
 
 .map-section {
   margin: 40px 0 40px;
-}
-
-.city-features ul {
-  list-style: none;
-}
-
-.city-features li a {
-  text-decoration: none;
-  color: inherit;
-  display: list-inline;
 }
 
 /* ----------------------------------------------------Contact Form */
@@ -222,6 +199,18 @@ div#map {
   margin: 12px 0 12px;
 }
 
+.btn-secondary {
+  color: #ffffff;
+  background-color: #04188a;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  color: #04188a;
+  background-color: #ffffff;
+  border-color: #6c757d;
+}
+
 
 
 /* ----------------------------------------------------Footer */
@@ -229,7 +218,8 @@ div#map {
 .footer-socials {
   display: flex;
   justify-content: flex-end;
-  padding-right: 30px;
+  margin-top: 30px;
+  padding-right: 20px;
 }
 
 .social-links {
@@ -244,6 +234,10 @@ div#map {
 /* ----------------------------------------------------Media Queries */
 
 @media (max-width: 768px) {
+
+  .hero-text h1 {
+    font-size: 4rem;
+  }
 
   .circle {
     display: flex;
@@ -279,5 +273,9 @@ div#map {
     display: block;
   }
 
+  .footer-socials {
+    justify-content: center;
+    padding-right: 0;
+  }
 
 }
