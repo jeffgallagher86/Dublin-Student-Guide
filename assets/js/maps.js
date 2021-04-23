@@ -1,4 +1,4 @@
-//------------------------------------------------------------- Map markers
+//------------------------------------------------------------- Map markers adapted from CI tutorial, youtube and Stack Overflow
 var markers_list = [{
         coords: {
             lat: 53.34210922216267,

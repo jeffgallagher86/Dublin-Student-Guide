@@ -1,4 +1,4 @@
-/* --------------------------------------------------------adapted from CI tutorial */
+/* --------------------------------------------------------sendemail JS adapted from CI tutorial */
 
 function sendMail(contactForm) {
     emailjs.send("default_service", "Dublin Student Guide", {
