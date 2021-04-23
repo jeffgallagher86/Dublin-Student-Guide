@@ -40,6 +40,9 @@ h4 {
   margin: 0.5rem;
 }
 
+#menu {
+  margin-right: 1.5rem;
+}
 
 .navbar-links ul {
   margin: 0;
@@ -142,16 +145,17 @@ h4 {
 
 .welcome-blurb p {
   padding-top: 20px;
+  font-size: 1rem;
 }
 
 /* ----------------------------------------------------City Features */
 
 .city-features {
-  background-color: #f5f5f5c0;
+  background-color: #f5f5f5;
   padding: 15px 0 30px;
 }
 
-.city-features h3 {
+.city-features h2 {
   padding-bottom: 30px;
 }
 
@@ -176,6 +180,7 @@ h4 {
 
 .city-features li a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* ----------------------------------------------------Map */
@@ -188,7 +193,7 @@ div#map {
   margin: 40px 0 40px;
 }
 
-.map-section h3 {
+.map-section h2 {
   margin-bottom: 20px;
 }
 
@@ -270,7 +275,11 @@ div#map {
 
 /* ----------------------------------------------------Media Queries */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+
+  .brand-title {
+    margin-left: 0;
+  }
 
   .hero-text h1 {
     font-size: 4rem;
@@ -311,13 +320,19 @@ div#map {
   .footer-socials {
     justify-content: center;
     padding-right: 0;
+    font-size: 1.5rem;
   }
 
 }
 
-@media (min-width: 900px) {
+@media (min-width: 910px) {
   .navbar-links{
     display: block!important;;
   } 
+
+  .brand-title {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+  }
 
 }
