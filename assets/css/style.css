@@ -134,7 +134,7 @@ h4 {
 /* ----------------------------------------------------Welcome Section */
 
 .welcome-blurb {
-  padding-top: 50px;
+  padding: 50px 0 50px;
 }
 
 .welcome-blurb p {
@@ -144,8 +144,12 @@ h4 {
 /* ----------------------------------------------------City Features */
 
 .city-features {
-  background-color: #f0f7ffc0;
+  background-color: #f5f5f5c0;
   padding: 30px 0 30px;
+}
+
+.city-features h3 {
+  padding-bottom: 30px;
 }
 
 .city-features ul {
@@ -171,7 +175,7 @@ h4 {
   text-decoration: underline;
 }
 
-/* ----------------------------------------------------City Features */
+/* ----------------------------------------------------Map */
 
 div#map {
   height: 500px;
@@ -227,6 +231,31 @@ div#map {
 }
 
 .social-links a i {
+  color: #04188a;
+}
+
+/* ----------------------------------------------------Scroll to top button */
+
+#btnScrollToTop {
+  position: fixed;
+  z-index: 10000;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #04188a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#btnScrollToTop i {
+  font-size: 2rem;
+}
+
+#btnScrollToTop:active {
+  background-color: #ffffff;
   color: #04188a;
 }
 

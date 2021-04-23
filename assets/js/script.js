@@ -14,3 +14,15 @@ toggleButton.addEventListener('click', () => {
   navbar.classList.toggle('active')
 })
 
+/* --------------------------------------------------------Scroll to top button */
+
+const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+btnScrollToTop.addEventListener("click", function () {
+
+  $("html, body").animate({ scrollTop: "0" }, "slow");
+
+});  
+
+
+
