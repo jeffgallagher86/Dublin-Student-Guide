@@ -1,280 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <title>Dublin Student Guide</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Dublin Student Guide</title>
-</head>
-
-<body>
-
-    <!--------------------------------------Header & Navbar ------------------------------------->
-    <header>
-        <nav class="navbar">
-            <div class="brand-title">
-                <h3>Dublin Student Guide</h3>
-            </div>
-            <a href="#" class="toggle-button">
-                <div class="circle icon">
-                    <span class="line top"></span>
-                    <span class="line middle"></span>
-                    <span class="line bottom"></span>
+    <body>
+        <!--------------------------------------Header & Navbar ------------------------------------->
+        <header>
+            <nav class="navbar">
+                <div class="brand-title">
+                    <h3>Dublin Student Guide</h3>
                 </div>
-            </a>
-            <div class="navbar-links">
-                <ul id="menu">
-                    <li>
-                        <a href="#">Home</a>
+                <a href="#" class="toggle-button">
+                    <div class="circle icon">
+                        <span class="line top"></span>
+                        <span class="line middle"></span>
+                        <span class="line bottom"></span>
+                    </div>
+                </a>
+                <div class="navbar-links">
+                    <ul id="menu">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#map">Map</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-------------------------------------- Scroll to top button ------------------------------------->
+        <button id="btnScrollToTop">
+            <i class="fas fa-angle-double-up"></i>
+        </button>
+        <!-------------------------------------- Hero Image ------------------------------------->
+        <section class="container-fluid g-0">
+            <div class="hero-image g-0">
+                <div class="hero-text">
+                    <h1>Welcome to Dublin</h1>
+                </div>
+            </div>
+        </section>
+        <!-------------------------------------- About/welcome Section ------------------------------------->
+
+        <section class="container-fluid d-flex justify-content-center text-center g-0">
+            <div class="row col-lg-6 col-md-8 col-sm-8 col-10 welcome-blurb text-center">
+                <h3>Céad míle fáilte!</h3>
+                <p>
+                    Hi guys! Here at the Dublin Student Guide we aim to provide you with you with as much info we can about our beautiful city. There is so much to see and do here that you might find it hard to get any study done! Just
+                    kidding! Seriously though, from Museums to architecture, restaurants, gigs and of course our famous pubs you'll have a blast! Have a look around our site, you'll find all the important links and and our map where we have
+                    handpicked all our essential hotspots in our city! If you have any questions about Dublin we have a handy form below where you can contact us and we'll answer you as best we can! Please enjoy the site and this wonderful
+                    city.
+                </p>
+            </div>
+        </section>
+        <!-------------------------------------- Things to do/links ------------------------------------->
+        <section class="container-fluid city-features g-0">
+            <div class="row city-features justify-content-around text-center g-0">
+                <h2>Explore Dublin's Attractions</h2>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-10">
+                    <img src="assets/images/guinness_barrels.jpg" class="img-fluid" alt="Guinness Barrels" />
+                    <p>Sightseeing</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.guinness-storehouse.com/en" target="_blank">Guinness Storehouse</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dublincastle.ie/" target="_blank">Dublin Castle</a>
+                        </li>
+                        <li>
+                            <a href="https://christchurchcathedral.ie/" target="_blank">Christ Church Cathedral</a>
+                        </li>
+                        <li>
+                            <a href="https://en.wikipedia.org/wiki/Temple_Bar,_Dublin" target="_blank">Temple Bar</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-10">
+                    <img src="assets/images/bord_gais_theatre.jpg" class="img-fluid" alt="Bord Gais Theatre" />
+                    <p>Theatre & Cinema</p>
+                    <ul>
+                        <li>
+                            <a href="https://bordgaisenergytheatre.ie/" target="_blank">Bord Gais Energy Theatre</a>
+                        </li>
+                        <li>
+                            <a href="https://www.abbeytheatre.ie/" target="_blank">Abbey Theatre</a>
+                        </li>
+                        <li>
+                            <a href="https://www.cineworld.ie/cinemas/dublin/8013" target="_blank">Cineworld</a>
+                        </li>
+                        <li>
+                            <a href="https://ifi.ie/" target="_blank">Irish Film Institute</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-10">
+                    <img src="assets/images/the_temple_bar.jpg" class="img-fluid" alt="The Temple Bar" />
+                    <p>Pubs</p>
+                    <ul>
+                        <li>
+                            <a href="https://thetemplebarpub.com/" target="_blank">The Temple Bar</a>
+                        </li>
+                        <li>
+                            <a href="https://stagshead.ie/" target="_blank">The Stag's Head</a>
+                        </li>
+                        <li>
+                            <a href="https://bruxelles.ie/" target="_blank">Bruxelles</a>
+                        </li>
+                        <li>
+                            <a href="https://www.devittspub.ie/" target="_blank">Devitt's</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-around text-center g-0">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-10">
+                    <img src="assets/images/dublin_airport.jpg" class="img-fluid" alt="Dublin Airport" />
+                    <p>Transport</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.dublinairport.com/" target="_blank">Dublin Airport</a>
+                        </li>
+                        <li>
+                            <a href="https://www.irishrail.ie/en-ie/" target="_blank">Irish Rail</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dublinbus.ie/" target="_blank">Dublin Bus</a>
+                        </li>
+                        <li>
+                            <a href="https://buseireann.ie/" target="_blank">Bus Eireann</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-10">
+                    <img src="assets/images/trinity_library.jpg" class="img-fluid" alt="Trinity College" />
+                    <p>Colleges</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.tcd.ie/" target="_blank">Trinity College</a>
+                        </li>
+                        <li>
+                            <a href="https://www.ucd.ie/" target="_blank">University College Dublin</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dit.ie/" target="_blank">Dublin Institute of Technology</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dbs.ie/" target="_blank">Dublin Business School</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-10">
+                    <img src="assets/images/cheap_eats.jpg" class="img-fluid" alt="Food" />
+                    <p>Cheap Eats</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.boojummex.com/" target="_blank">Boojum</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bunsen.ie/" target="_blank">Bunsen</a>
+                        </li>
+                        <li>
+                            <a href="https://www.umifalafel.ie/" target="_blank">Umi Falafel</a>
+                        </li>
+                        <li>
+                            <a href="https://www.just-eat.ie/" target="_blank">Just Eat</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-------------------------------------- Map Section ------------------------------------->
+        <section class="container-fluid g-0 map-section">
+            <div class="row justify-content-around g-0 text-center">
+                <h2>Where to go</h2>
+                <div class="col-lg-8 col-10" id="map"></div>
+            </div>
+        </section>
+        <section class="container-fluid form-section" id="contact">
+            <div class="row justify-content-center text-center">
+                <div>
+                    <h2>Give us a shout!</h2>
+                    <p>If you have any questions at all for us, ask below and we'll get back to you.</p>
+                </div>
+                <div class="center-form col-lg-6 col-md-8 col-sm-8 col-10 text-center">
+                    <form onsubmit="return sendMail(this);">
+                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+                        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required />
+                        <textarea rows="6" name="projectsummary" class="form-control" id="projectsummary" placeholder="What's the craic?" required></textarea>
+                        <button type="submit" class="btn btn-secondary">Ask Away!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-------------------------------------- Footer with Social media links ------------------------------------->
+        <footer>
+            <div class="footer-socials">
+                <ul class="list-inline">
+                    <li class="list-inline-item social-links">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#map">Map</a>
+                    <li class="list-inline-item social-links">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#contact">Contact</a>
+                    <li class="list-inline-item social-links">
+                        <a href="https://twitter.com/home" target="_blank">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item social-links">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
                     </li>
                 </ul>
             </div>
-        </nav>
+        </footer>
 
-    </header>
-    <!-------------------------------------- Scroll to top button ------------------------------------->
-    <button id="btnScrollToTop">
-        <i class="fas fa-angle-double-up"></i>
-    </button>
-    <!-------------------------------------- Hero Image ------------------------------------->
-    <section class="container-fluid g-0">
-        <div class="hero-image g-0">
-            <div class="hero-text">
-                <h1>Welcome to Dublin</h1>
-            </div>
-    </section>
-    <!-------------------------------------- About/welcome Section ------------------------------------->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script>
+            (function () {
+                emailjs.init("user_Ln3u4ZjFAoNjrswQfCH6M");
+            })();
+        </script>
 
-    <section class="container-fluid d-flex justify-content-center text-center g-0">
-        <div class="row col-lg-6 col-md-8 col-sm-8 col-10 welcome-blurb text-center">
-            <h3>Céad míle fáilte!</h3>
-            <p>Hi guys! Here at the Dublin Student Guide we aim to provide you with you with as much
-                info we can about our beautiful city. There is so much to see and do here that you might find it
-                hard to get any study done! Just kidding! Seriously though, from Museums to architecture,
-                restaurants, gigs and of course our famous pubs you'll have a blast! Have a look around our site, you'll
-                find all the important links and and our map where we have handpicked all our essential hotspots in our
-                city! If you have any questions about Dublin we have a handy form below where you can contact us and
-                we'll answer you as best we can! Please enjoy the site and this wonderful city.
-
-            </p>
-        </div>
-
-    </section>
-    <!-------------------------------------- Things to do/links ------------------------------------->
-    <section class="container-fluid city-features g-0">
-
-        <div class="row city-features justify-content-around text-center g-0">
-
-            <h2>Explore Dublin's Attractions</h2>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-10">
-
-                <img src="assets/images/guinness_barrels.jpg" class="img-fluid" alt="Guinness Barrels">
-                <p>Sightseeing</p>
-                <ul>
-                    <li>
-                        <a href="https://www.guinness-storehouse.com/en" target="_blank">Guinness Storehouse</a>
-                    </li>
-                    <li>
-                        <a href="https://www.dublincastle.ie/" target="_blank">Dublin Castle</a>
-                    </li>
-                    <li>
-                        <a href="https://christchurchcathedral.ie/" target="_blank">Christ Church Cathedral</a>
-                    </li>
-                    <li>
-                        <a href="https://en.wikipedia.org/wiki/Temple_Bar,_Dublin" target="_blank">Temple Bar</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-sm-3 col-10">
-
-                <img src="assets/images/bord_gais_theatre.jpg" class="img-fluid" alt="Bord Gais Theatre">
-                <p>Theatre & Cinema</p>
-                <ul>
-                    <li>
-                        <a href="https://bordgaisenergytheatre.ie/" target="_blank">Bord Gais Energy Theatre</a>
-                    </li>
-                    <li>
-                        <a href="https://www.abbeytheatre.ie/" target="_blank">Abbey Theatre</a>
-                    </li>
-                    <li>
-                        <a href="https://www.cineworld.ie/cinemas/dublin/8013" target="_blank">Cineworld</a>
-                    </li>
-                    <li>
-                        <a href="https://ifi.ie/" target="_blank">Irish Film Institute</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-10">
-
-                <img src="assets/images/the_temple_bar.jpg" class="img-fluid" alt="The Temple Bar">
-                <p>Pubs</p>
-                <ul>
-                    <li>
-                        <a href="https://thetemplebarpub.com/" target="_blank">The Temple Bar</a>
-                    </li>
-                    <li>
-                        <a href="https://stagshead.ie/" target="_blank">The Stag's Head</a>
-                    </li>
-                    <li>
-                        <a href="https://bruxelles.ie/" target="_blank">Bruxelles</a>
-                    </li>
-                    <li>
-                        <a href="https://www.devittspub.ie/" target="_blank">Devitt's</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row justify-content-around text-center g-0">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-10">
-                <img src="assets/images/dublin_airport.jpg" class="img-fluid" alt="Dublin Airport">
-                <p>Transport</p>
-                <ul>
-                    <li>
-                        <a href="https://www.dublinairport.com/" target="_blank">Dublin Airport</a>
-                    </li>
-                    <li>
-                        <a href="https://www.irishrail.ie/en-ie/" target="_blank">Irish Rail</a>
-                    </li>
-                    <li>
-                        <a href="https://www.dublinbus.ie/" target="_blank">Dublin Bus</a>
-                    </li>
-                    <li>
-                        <a href="https://buseireann.ie/" target="_blank">Bus Eireann</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-10">
-
-                <img src="assets/images/trinity_library.jpg" class="img-fluid" alt="Trinity College">
-                <p>Colleges</p>
-                <ul>
-                    <li>
-                        <a href="https://www.tcd.ie/" target="_blank">Trinity College</a>
-                    </li>
-                    <li>
-                        <a href="https://www.ucd.ie/" target="_blank">University College Dublin</a>
-                    </li>
-                    <li>
-                        <a href="https://www.dit.ie/" target="_blank">Dublin Institute of Technology</a>
-                    </li>
-                    <li>
-                        <a href="https://www.dbs.ie/" target="_blank">Dublin Business School</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-10">
-
-                <img src="assets/images/cheap_eats.jpg" class="img-fluid" alt="Food">
-                <p>Cheap Eats</p>
-                <ul>
-                    <li>
-                        <a href="https://www.boojummex.com/" target="_blank">Boojum</a>
-                    </li>
-                    <li>
-                        <a href="https://www.bunsen.ie/" target="_blank">Bunsen</a>
-                    </li>
-                    <li>
-                        <a href="https://www.umifalafel.ie/" target="_blank">Umi Falafel</a>
-                    </li>
-                    <li>
-                        <a href="https://www.just-eat.ie/" target="_blank">Just Eat</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-------------------------------------- Map Section ------------------------------------->
-    <section class="container-fluid g-0 map-section">
-        <div class="row justify-content-around g-0 text-center">
-            <h2>Where to go</h2>
-            <div class="col-lg-8 col-10" id="map">
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid form-section" id="contact">
-        <div class="row justify-content-center text-center">
-            <div>
-                <h2>Give us a shout!</h2>
-                <p>If you have any questions at all for us, ask below and we'll get back to you.</p>
-            </div>
-            <div class="center-form col-lg-6 col-md-8 col-sm-8 col-10 text-center">
-                <form onsubmit="return sendMail(this);">
-                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
-                        required />
-                    <textarea rows="6" name="projectsummary" class="form-control" id="projectsummary"
-                        placeholder="What's the craic?" required></textarea>
-                    <button type="submit" class="btn btn-secondary">Ask Away!</button>
-
-
-                </form>
-            </div>
-        </div>
-    </section>
-    <!-------------------------------------- Footer with Social media links ------------------------------------->
-    <footer>
-        <div class="footer-socials">
-            <ul class="list-inline">
-                <li class="list-inline-item social-links">
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                </li>
-                <li class="list-inline-item social-links">
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                </li>
-                <li class="list-inline-item social-links">
-                    <a href="https://twitter.com/home" target="_blank">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
-                    </a>
-                </li>
-                <li class="list-inline-item social-links">
-                    <a href="https://www.youtube.com/" target="_blank">
-                        <i class="fab fa-youtube" aria-hidden="true"></i>
-                        <span class="sr-only">YouTube</span>
-                    </a>
-                </li>
-            </ul>
-    </footer>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_Ln3u4ZjFAoNjrswQfCH6M");
-        })();
-    </script>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8ssFH9RcVa-ftK5u_IQnRK_L4ppSASMo&callback=initMap">
-    </script>
-    <script src="assets/js/maps.js"></script>
-    <script src="assets/js/sendemail.js"></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8ssFH9RcVa-ftK5u_IQnRK_L4ppSASMo&callback=initMap"></script>
+        <script src="assets/js/maps.js"></script>
+        <script src="assets/js/sendemail.js"></script>
+    </body>
 </html>
